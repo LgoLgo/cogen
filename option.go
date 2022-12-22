@@ -18,12 +18,12 @@ type Options struct {
 
 	// FontFilePath sets font file path.
 	//
-	// Default: LgoLgo.ttf
+	// Default: font/syqh.ttf
 	FontFilePath string
 
 	// ImagePath sets image path
 	//
-	// Default: LgoLgo.png
+	// Default: img/gopher.png
 	ImagePath string
 
 	// CoverRGB sets cover's RGB255.
@@ -33,7 +33,7 @@ type Options struct {
 
 	// FontRGB sets font's RGB255.
 	//
-	// Default: [238, 241, 247]
+	// Default: []int{238, 241, 247}
 	FontRGB []int
 
 	// FontSize sets font size.
@@ -127,8 +127,8 @@ func (o *Options) Apply(opts []Option) {
 var OptionsDefault = Options{
 	Title:          "LgoLgo",
 	SavingFileName: "LgoLgo",
-	FontFilePath:   "LgoLgo.ttf",
-	ImagePath:      "LgoLgo.png",
+	FontFilePath:   "font/syqh.ttf",
+	ImagePath:      "img/gopher.png",
 	CoverRGB:       []int{47, 54, 66},
 	FontRGB:        []int{238, 241, 247},
 	FontSize:       76,
